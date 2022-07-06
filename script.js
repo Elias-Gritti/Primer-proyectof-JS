@@ -66,9 +66,9 @@ function calcularPrecio (precioComida, cantidadComida, costoEnvio) {
 //Solicito al usuario la identificación de la comida y la almaceno en una nueva variable con la comida seleccionada.
 let comidaSeleccionada = parseInt(prompt("Ingrese el ID de la comida que desea pedir: "))
 const pizzaBuscada = pizzas.find(pizza => pizzas.id === comidaSeleccionada)
-const hamburguesaBuscada = hamburguesas.find(hamburguesas.id === comidaSeleccionada)
-const empanadaBuscada = empanadas.find(empanadas.id === comidaSeleccionada)
-const tartaBuscada = tartas.find(tartas.id === comidaSeleccionada)
+const hamburguesaBuscada = hamburguesas.find(hamburguesa => hamburguesas.id === comidaSeleccionada)
+const empanadaBuscada = empanadas.find(empanada => empanadas.id === comidaSeleccionada)
+const tartaBuscada = tartas.find(tarta => tartas.id === comidaSeleccionada)
 
 //Solicito al usuario la cantidad de comida.
 let cantidad = parseInt(prompt("Ingrese la cantidad de unidades que quiere de la comida seleccionada"))
